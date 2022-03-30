@@ -8,32 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection: Tab = .featured
+    enum Tab {
+        case featured
+        case list
+    }
     var body: some View {
-        VStack {
-            MapView()
-                .frame(height: 300)
-            CircleImageView()
-                .offset(y: -130)
-                .padding(.bottom, -130)
-
-            VStack(
-                alignment: .leading
-            ){
-                Text("META")
-                    .fontWeight(.bold)
-                    .font(.title)
-                    .foregroundColor(.red)
-                HStack {
-                    Text("National Park")
-                        .font(.subheadline)
-                        .fontWeight(.medium)
-                    .foregroundColor(Color.blue)
-                    Spacer()
-                    Text("California")
+        TabView(selection: $selection) {
+            CategoryHome()
+                .tabItem {
+                    Label("Featured", systemImage: "star")
                 }
-            }
-        .padding()
-        Spacer()
+                .tag(Tab.featured)
+
+            LandmarkList()
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
+                .tag(Tab.list)
         }
     }
 }
@@ -41,5 +33,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
