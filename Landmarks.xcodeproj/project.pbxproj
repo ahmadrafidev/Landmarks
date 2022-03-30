@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925E980A27F401AE00E29153 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925E980927F401AE00E29153 /* CategoryHome.swift */; };
 		9286D83527F29D6900A1F4AC /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9286D83427F29D6900A1F4AC /* landmarkData.json */; };
 		9286D83927F29DD100A1F4AC /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286D83827F29DD100A1F4AC /* Landmark.swift */; };
 		9286D83B27F29F2A00A1F4AC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9286D83A27F29F2A00A1F4AC /* ModelData.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		925E980927F401AE00E29153 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		9286D83427F29D6900A1F4AC /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		9286D83827F29DD100A1F4AC /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		9286D83A27F29F2A00A1F4AC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		925E980827F4019800E29153 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				925E980927F401AE00E29153 /* CategoryHome.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		9286D83C27F29F7100A1F4AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		92D3292327F1F9B40079E23A /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				925E980827F4019800E29153 /* Categories */,
 				9286D83F27F29FB200A1F4AC /* Resources */,
 				9286D83E27F29F9B00A1F4AC /* Model */,
 				92D3292427F1F9B40079E23A /* LandmarksApp.swift */,
@@ -316,6 +327,7 @@
 				92D3292E27F1F9B60079E23A /* Persistence.swift in Sources */,
 				92F3415A27F299CA0033F53C /* MapView.swift in Sources */,
 				92D3292727F1F9B40079E23A /* ContentView.swift in Sources */,
+				925E980A27F401AE00E29153 /* CategoryHome.swift in Sources */,
 				92D3292527F1F9B40079E23A /* LandmarksApp.swift in Sources */,
 				9286D83B27F29F2A00A1F4AC /* ModelData.swift in Sources */,
 				92F3415827F298C30033F53C /* CircleImageView.swift in Sources */,
